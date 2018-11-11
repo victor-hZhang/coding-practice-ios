@@ -37,7 +37,7 @@ class ApiServiceTests: XCTestCase {
             XCTAssertNotNil(mappedObject?.events?[0].name, "Response event name should not be nil")
             XCTAssertNotNil(mappedObject?.events?[0].date, "Response event date should not be nil")
             XCTAssertNotNil(mappedObject?.events?[0].availableSeats, "Response event date should not be nil")
-            XCTAssertNotNil(mappedObject?.events?[0].price, "Response event date should not be nil")
+            XCTAssertNotNil(mappedObject?.events?[0].priceString, "Response event date should not be nil")
             XCTAssertNotNil(mappedObject?.events?[0].venue, "Response event date should not be nil")
             XCTAssertNotNil(mappedObject?.events?[0].labels, "Response event date should not be nil")
         }

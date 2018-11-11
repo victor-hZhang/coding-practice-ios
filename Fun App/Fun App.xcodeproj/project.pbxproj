@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		686E872E2197EDCD000B71F1 /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686E872D2197EDCD000B71F1 /* EventViewModel.swift */; };
 		686E87322197FEB2000B71F1 /* ObservableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686E87312197FEB2000B71F1 /* ObservableType.swift */; };
+		686E876521985A01000B71F1 /* EventViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686E876421985A01000B71F1 /* EventViewModelTests.swift */; };
 		68848ED92197BA1300F880CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68848ED82197BA1300F880CF /* AppDelegate.swift */; };
 		68848EDB2197BA1300F880CF /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68848EDA2197BA1300F880CF /* EventViewController.swift */; };
 		68848EDE2197BA1300F880CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68848EDC2197BA1300F880CF /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 		37E1F262B4354C437197D394 /* Pods-Fun AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fun AppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fun AppTests/Pods-Fun AppTests.release.xcconfig"; sourceTree = "<group>"; };
 		686E872D2197EDCD000B71F1 /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
 		686E87312197FEB2000B71F1 /* ObservableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableType.swift; sourceTree = "<group>"; };
+		686E876421985A01000B71F1 /* EventViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModelTests.swift; sourceTree = "<group>"; };
 		68848ED52197BA1300F880CF /* Fun App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fun App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68848ED82197BA1300F880CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68848EDA2197BA1300F880CF /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			children = (
 				68848EED2197BA1400F880CF /* ApiServiceTests.swift */,
 				68848EEF2197BA1400F880CF /* Info.plist */,
+				686E876421985A01000B71F1 /* EventViewModelTests.swift */,
 			);
 			path = "Fun AppTests";
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				68848EEE2197BA1400F880CF /* ApiServiceTests.swift in Sources */,
+				686E876521985A01000B71F1 /* EventViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

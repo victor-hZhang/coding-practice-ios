@@ -12,7 +12,7 @@ class Event: Mappable {
     var name: String?
     var date: Date?
     var availableSeats: Int?
-    private var price: NSNumber?
+    var price: NSNumber?
     var venue: String?
     var labels: [String]?
     

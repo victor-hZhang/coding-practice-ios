@@ -14,7 +14,7 @@ class EventViewController: UIViewController {
     @IBOutlet weak var eventsTableView: UITableView!
     let disposeBag = DisposeBag()
     
-    let viewModel: EventViewModel = EventViewModel(disposeBag: DisposeBag())
+    let viewModel: EventViewModel = EventViewModel(disposeBag: DisposeBag(), apiService: ApiServiceImpl())
     
     override func viewDidLoad() {
         super.viewDidLoad()

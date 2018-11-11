@@ -9,11 +9,13 @@
 import RxSwift
 
 class EventViewModel {
-    var disposeBag: DisposeBag
-    var eventsList: [Event] = []
+    private var disposeBag: DisposeBag
+    private var eventsList: [Event] = []
+    private var apiService: ApiService
     
-    init(disposeBag: DisposeBag) {
+    init(disposeBag: DisposeBag, apiService: ApiService) {
         self.disposeBag = disposeBag
+        self.apiService = apiService
     }
     
     // MARK: Public
@@ -50,7 +52,7 @@ class EventViewModel {
     // MARK: Private
     private let eventsSubject = Variable<[Event]>([])
     private func getEventsObservable() -> Observable<[Event]> {
-        return ApiServiceImpl().getEvents()
+        return apiService.getEvents()
     }
     
 }
