@@ -14,7 +14,7 @@ import RxBlocking
 @testable import Fun_App
 
 class EventViewModelTests: XCTestCase {
-    //Should use a mock or stub service here, IOS unit test can acturally make API calls so been a big lazy.
+    var disposeBag = DisposeBag()
     var viewModel = EventViewModel(disposeBag: DisposeBag(), apiService: ApiStubService())
     
      private var observer: TestableObserver<[Fun_App.Event]>!
@@ -34,8 +34,9 @@ class EventViewModelTests: XCTestCase {
     func testloadEvent() {
         viewModel.loadEvents()
         viewModel.events.asObservable().subscribe(onNext: { (events) in
-            XCTAssertEqual(1, events.count)
-        })
+            XCTAssertEqual(2, events.count)
+            XCTAssertEqual("test2", events[0].name)
+        }).disposed(by: disposeBag)
     }
     
     func testPlayButtonTapped() {
@@ -43,7 +44,7 @@ class EventViewModelTests: XCTestCase {
         viewModel.playButtonTapped()
         viewModel.events.asObservable().subscribe(onNext: { (events) in
             XCTAssertEqual(0, events.count)
-        })
+        }).disposed(by: disposeBag)
     }
     
     func testCurrencyFormat() {
@@ -57,13 +58,27 @@ class EventViewModelTests: XCTestCase {
 fileprivate class ApiStubService: ApiService {
     func getEvents() -> Observable<[Fun_App.Event]> {
         var events: [Fun_App.Event] = []
+        
         let event1: Fun_App.Event = Event()
         event1.name = "test1"
-        event1.date = nil
+        event1.date = Date(timeIntervalSinceReferenceDate: -123456789.0)
         event1.availableSeats = 12
         event1.venue = "test venue"
         event1.price = 26
         events.append(event1)
+        
+        let event2: Fun_App.Event = Event()
+        event2.name = "test2"
+        event2.date = Date(timeIntervalSinceReferenceDate: -234567890.0)
+        event2.availableSeats = 123
+        event2.venue = "test venue 2"
+        event2.price = 30
+        events.append(event2)
+        
+        let event3: Fun_App.Event = Event()
+        event3.availableSeats = 0
+        events.append(event3)
+        
         return Observable.just(events)
     }
 }
