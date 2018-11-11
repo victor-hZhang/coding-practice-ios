@@ -10,6 +10,7 @@ import RxSwift
 
 class EventViewModel {
     var disposeBag: DisposeBag
+    var eventsList: [Event] = []
     
     init(disposeBag: DisposeBag) {
         self.disposeBag = disposeBag
@@ -35,7 +36,15 @@ class EventViewModel {
             }
             .subscribe(onNext: { [weak self]  events in
             self?.eventsSubject.value = events
+            self?.eventsList = events
         }).disposed(by: disposeBag)
+    }
+    
+    public func playButtonTapped() {
+        self.eventsSubject.value = eventsList.filter({ (event) -> Bool in
+            guard let eventlabel = event.labels else {return false}
+            return eventlabel.contains("play")
+        })
     }
     
     // MARK: Private
