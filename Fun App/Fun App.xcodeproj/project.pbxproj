@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		686E872E2197EDCD000B71F1 /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686E872D2197EDCD000B71F1 /* EventViewModel.swift */; };
+		686E87322197FEB2000B71F1 /* ObservableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686E87312197FEB2000B71F1 /* ObservableType.swift */; };
 		68848ED92197BA1300F880CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68848ED82197BA1300F880CF /* AppDelegate.swift */; };
-		68848EDB2197BA1300F880CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68848EDA2197BA1300F880CF /* ViewController.swift */; };
+		68848EDB2197BA1300F880CF /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68848EDA2197BA1300F880CF /* EventViewController.swift */; };
 		68848EDE2197BA1300F880CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68848EDC2197BA1300F880CF /* Main.storyboard */; };
 		68848EE02197BA1300F880CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68848EDF2197BA1300F880CF /* Assets.xcassets */; };
 		68848EE32197BA1400F880CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68848EE12197BA1400F880CF /* LaunchScreen.storyboard */; };
@@ -16,6 +18,7 @@
 		68848EFA2197C46C00F880CF /* EventsAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68848EF92197C46C00F880CF /* EventsAPIResponse.swift */; };
 		68848EFC2197C48B00F880CF /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68848EFB2197C48B00F880CF /* Event.swift */; };
 		68848EFF2197C89500F880CF /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68848EFE2197C89500F880CF /* ApiService.swift */; };
+		68848F032197DB1000F880CF /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68848F022197DB1000F880CF /* EventTableViewCell.swift */; };
 		D3BD7FDFBD0AE9457A833F3C /* Pods_Fun_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 304B1CAC7BC39D9E4CE7797F /* Pods_Fun_AppTests.framework */; };
 		DDD7EEEE9377463549BE13AB /* Pods_Fun_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE333406E26E7650764BBE0 /* Pods_Fun_App.framework */; };
 /* End PBXBuildFile section */
@@ -34,9 +37,11 @@
 		2EE333406E26E7650764BBE0 /* Pods_Fun_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fun_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		304B1CAC7BC39D9E4CE7797F /* Pods_Fun_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fun_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		37E1F262B4354C437197D394 /* Pods-Fun AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fun AppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fun AppTests/Pods-Fun AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		686E872D2197EDCD000B71F1 /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
+		686E87312197FEB2000B71F1 /* ObservableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableType.swift; sourceTree = "<group>"; };
 		68848ED52197BA1300F880CF /* Fun App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fun App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68848ED82197BA1300F880CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		68848EDA2197BA1300F880CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		68848EDA2197BA1300F880CF /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		68848EDD2197BA1300F880CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		68848EDF2197BA1300F880CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68848EE22197BA1400F880CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +52,7 @@
 		68848EF92197C46C00F880CF /* EventsAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsAPIResponse.swift; sourceTree = "<group>"; };
 		68848EFB2197C48B00F880CF /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		68848EFE2197C89500F880CF /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		68848F022197DB1000F880CF /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		7D173CD4A8DB3EBB6ED3BAC2 /* Pods-Fun App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fun App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fun App/Pods-Fun App.release.xcconfig"; sourceTree = "<group>"; };
 		B6B20DC4BECC7158DBBF2386 /* Pods-Fun App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fun App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fun App/Pods-Fun App.debug.xcconfig"; sourceTree = "<group>"; };
 		FD20E113B3AC1487F053F77B /* Pods-Fun AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fun AppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fun AppTests/Pods-Fun AppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -95,10 +101,10 @@
 		68848ED72197BA1300F880CF /* Fun App */ = {
 			isa = PBXGroup;
 			children = (
+				68848F042197DB1C00F880CF /* View */,
 				68848EFD2197C73F00F880CF /* ApiService */,
 				68848EF82197C42A00F880CF /* Model */,
 				68848ED82197BA1300F880CF /* AppDelegate.swift */,
-				68848EDA2197BA1300F880CF /* ViewController.swift */,
 				68848EDC2197BA1300F880CF /* Main.storyboard */,
 				68848EDF2197BA1300F880CF /* Assets.xcassets */,
 				68848EE12197BA1400F880CF /* LaunchScreen.storyboard */,
@@ -129,8 +135,19 @@
 			isa = PBXGroup;
 			children = (
 				68848EFE2197C89500F880CF /* ApiService.swift */,
+				686E87312197FEB2000B71F1 /* ObservableType.swift */,
 			);
 			path = ApiService;
+			sourceTree = "<group>";
+		};
+		68848F042197DB1C00F880CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				68848EDA2197BA1300F880CF /* EventViewController.swift */,
+				68848F022197DB1000F880CF /* EventTableViewCell.swift */,
+				686E872D2197EDCD000B71F1 /* EventViewModel.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		DF25C40B494C374F85E6CE2B /* Pods */ = {
@@ -300,12 +317,20 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -322,12 +347,20 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -341,10 +374,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68848F032197DB1000F880CF /* EventTableViewCell.swift in Sources */,
 				68848EFC2197C48B00F880CF /* Event.swift in Sources */,
 				68848EFF2197C89500F880CF /* ApiService.swift in Sources */,
-				68848EDB2197BA1300F880CF /* ViewController.swift in Sources */,
+				68848EDB2197BA1300F880CF /* EventViewController.swift in Sources */,
 				68848ED92197BA1300F880CF /* AppDelegate.swift in Sources */,
+				686E872E2197EDCD000B71F1 /* EventViewModel.swift in Sources */,
+				686E87322197FEB2000B71F1 /* ObservableType.swift in Sources */,
 				68848EFA2197C46C00F880CF /* EventsAPIResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

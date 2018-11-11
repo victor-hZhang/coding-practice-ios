@@ -12,7 +12,7 @@ class Event: Mappable {
     var name: String?
     var date: Date?
     var availableSeats: Int?
-    var price: Double?
+    private var price: NSNumber?
     var venue: String?
     var labels: [String]?
     
@@ -35,5 +35,18 @@ class Event: Mappable {
         price <- map["price"]
         venue <- map["venue"]
         labels <- map["labels"]
+    }
+    
+    var priceString: String {
+        guard let priceAmount = price else {return ""}
+        return convertToCurrencyFormate(price: priceAmount)
+    }
+    
+    private func convertToCurrencyFormate(price: NSNumber) -> String {
+        let formatter = NumberFormatter()
+        formatter.locale = Locale.current
+        formatter.numberStyle = .currency
+        guard let currencyString = formatter.string(from: price) else {return ""}
+        return currencyString
     }
 }
